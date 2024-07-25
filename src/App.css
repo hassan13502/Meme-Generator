@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+body{
+    font-family: "Karla";
+}
+.Navbar{
+    color: white;
+    display: flex;
+    padding: 15px 40px;
+    background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+    justify-content: space-between;
+}
+
+.nav-logo{
+    display: flex;
+}
+
+.trollFace{
+    width: 60px;
+    height: 50px;
+    align-self: center;
+}
+
+.nav-title{
+    padding-left: 7px;
+    align-self: center;
+}
+
+.nav-p{
+    align-self: center;
+    font-size: 16px;
+}
+
+.formDiv{
+    display: grid;
+    grid-template: 40px 40px 40px  / 1fr 1fr;
+    gap: 20px;
+    padding: 6% 15%;
+}
+
+.form-input{
+    font-family: "Karla", sans-serif;
+    border-radius: 5px;
+    border: 1px solid D5D4D8;
+    text-indent : 7px;
+}
+
+.button{
+    grid-column: 1 / -1;
+    background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+    font-family: "Karla", sans-serif;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.img-container{
+    grid-column: 1 /-1;
+    position: relative;
+}
+.image{
+    border-radius: 10px;
+    width: 100%;
+}
+.meme-text{
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 15px 0;
+    padding: 0 5px;
+    font-family: impact, sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow:
+        2px 2px 0 #000,
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        0 2px 0 #000,
+        2px 0 0 #000,
+        0 -2px 0 #000,
+        -2px 0 0 #000,
+        2px 2px 5px #000;
+}
+
+.top-meme-text{
+    top:0px
+}
+.bottom-meme-text{
+    bottom : 0px
+}
+
+.fileupload{
+    background-color: #ffffff00;
+}
+
+@media (max-width : 480px) {
+
+    .Navbar{
+        padding: 15px 30px;
+    }
+
+    .trollFace{
+        width: 40px;
+        height: 35px;
+        align-self: center;
+    }
+
+    .nav-title{
+        font-size: 18px;
+    }
+    
+    .nav-p{
+        font-size: 12px;
+    }
+    
+    .formDiv{
+        gap: 15px;
+        grid-template: 40px 40px 40px 40px / 1fr;
+        padding: 50px 20px;
+    }
+    
+    .image{
+        border-radius: 7px;
+        width: 100%;
+    }
+
+    .meme-text{
+        font-size: 1.5rem;
+    }
+
+}
